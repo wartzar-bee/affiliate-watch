@@ -1,0 +1,33 @@
+{
+  "name": "@wartzar-bee/affiliate-watch",
+  "version": "0.1.0",
+  "description": "Know the moment a casino-affiliate program changes its terms, cuts your commission, blocks your GEO, or closes. Snapshots a watchlist of public affiliate-program pages, diffs them on a schedule, classifies adverse changes, and emits alerts as a report, JSON, or RSS.",
+  "type": "module",
+  "bin": { "affiliate-watch": "bin/affiliate-watch.mjs" },
+  "scripts": {
+    "test": "node --test",
+    "start": "node bin/affiliate-watch.mjs"
+  },
+  "keywords": [
+    "affiliate",
+    "igaming",
+    "casino",
+    "affiliate-program",
+    "change-detection",
+    "monitoring",
+    "diff",
+    "revshare",
+    "cpa",
+    "alerts",
+    "rss",
+    "cli",
+    "gpwa"
+  ],
+  "repository": { "type": "git", "url": "git+https://github.com/wartzar-bee/affiliate-watch.git" },
+  "homepage": "https://github.com/wartzar-bee/affiliate-watch#readme",
+  "bugs": { "url": "https://github.com/wartzar-bee/affiliate-watch/issues" },
+  "files": ["bin/", "src/", "examples/", "README.md"],
+  "engines": { "node": ">=22" },
+  "license": "MIT",
+  "private": false
+}

@@ -1,0 +1,40 @@
+# Cloudflare Pages config for the affiliate-watch demand-test surface (V035).
+#
+# This is a STATIC site + ONE Pages Function (functions/api/subscribe.js) that
+# appends waitlist signups to a KV namespace bound as `WAITLIST`.
+#
+# ─────────────────────────────────────────────────────────────────────────────
+# BEFORE DEPLOY — operator must create the KV namespace and bind it:
+#
+#   1. Create the namespace (one-time):
+#        npx wrangler kv namespace create WAITLIST
+#      Wrangler prints an `id = "<hex>"`. Paste it below (replace REPLACE_WITH_KV_ID).
+#      (Optionally also: `npx wrangler kv namespace create WAITLIST --preview`
+#       and set preview_id for `wrangler pages dev` local testing.)
+#
+#   2. Either keep this [[kv_namespaces]] block (Wrangler/CI deploys read it),
+#      OR bind it in the Cloudflare dashboard instead:
+#        Pages project → Settings → Functions → KV namespace bindings →
+#        Variable name: WAITLIST → select the namespace.
+#      (Dashboard binding and this file are equivalent; use whichever your
+#       deploy flow uses. The Function only needs `env.WAITLIST` to exist.)
+#
+#   3. Deploy the built site (see web/build.sh):
+#        ./build.sh https://<your-domain>
+#        npx wrangler pages deploy dist --project-name affiliate-watch
+#
+# Reading signups (THE demand metric):
+#   npx wrangler kv key list   --binding WAITLIST            # all keys
+#   npx wrangler kv key get "<key>" --binding WAITLIST       # one entry
+#   # `email:<addr>` keys = de-duped unique signups (count these for the metric).
+#   # `sub:<ts>:<rand>` keys = append-only audit rows (every submit).
+# ─────────────────────────────────────────────────────────────────────────────
+
+name = "affiliate-watch"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-05-01"
+
+[[kv_namespaces]]
+binding = "WAITLIST"
+id = "REPLACE_WITH_KV_ID"
+# preview_id = "REPLACE_WITH_PREVIEW_KV_ID"  # only needed for `wrangler pages dev`

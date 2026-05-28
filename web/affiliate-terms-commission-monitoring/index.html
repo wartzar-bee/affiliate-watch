@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Affiliate Terms & Commission Monitoring (Casino & Sportsbook)</title>
+<meta name="description" content="What to watch on a casino affiliate program's terms and commission page, why a scheduled diff beats re-reading it, and how to monitor RevShare, CPA, cookie windows and payment terms for adverse changes.">
+<link rel="canonical" href="__SITE__/affiliate-terms-commission-monitoring/">
+<meta property="og:title" content="Affiliate Terms & Commission Monitoring">
+<meta property="og:description" content="What to watch on an affiliate terms / commission page — and why a scheduled diff beats re-reading it.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="__SITE__/affiliate-terms-commission-monitoring/">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='13' font-size='13'%3E%F0%9F%91%81%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="/">affiliate<b>-watch</b> <span class="eye">&#128065;</span></a>
+  <nav class="top"><a href="/feed/">Live feed</a> <a href="/#guides">Guides</a> <a href="/#waitlist">Get alerts</a></nav>
+</div></header>
+
+<main><div class="wrap"><article class="guide">
+  <div class="crumbs"><a href="/">Home</a> &rsaquo; <a href="/#guides">Guides</a> &rsaquo; Terms &amp; commission monitoring</div>
+  <h1>Affiliate terms &amp; commission monitoring</h1>
+  <p class="lede">Your earnings are defined by a document you don't control and rarely re-read: the program's
+    terms and commission page. This guide covers exactly what to monitor on that page, why a scheduled diff is
+    far more reliable than re-reading it, and how to turn "the deal changed" into an alert instead of a surprise.</p>
+
+  <h2>What to monitor on a terms / commission page</h2>
+  <ul>
+    <li><strong>RevShare percentage.</strong> The headline number. A downward move (e.g. 40% &rarr; 25%) is the
+      single most painful change and is often buried in an otherwise-unchanged paragraph.</li>
+    <li><strong>CPA and hybrid deal terms.</strong> The flat amount, the qualifying criteria, and the mix in a
+      hybrid deal.</li>
+    <li><strong>Qualifying / NGR definitions.</strong> Changing what counts as a "qualified player" or how Net
+      Gaming Revenue is calculated can cut your effective rate without touching the headline percentage.</li>
+    <li><strong>Cookie / attribution window.</strong> A shorter window means fewer of your referrals get
+      credited.</li>
+    <li><strong>Negative carryover.</strong> Whether a negative balance resets monthly or is carried forward —
+      and whether a "no negative carryover" promise is still present.</li>
+    <li><strong>Payment terms.</strong> Minimum payout, methods, schedule, and any new fees.</li>
+    <li><strong>GEO / restricted markets.</strong> The list of jurisdictions you can and can't send traffic from.</li>
+    <li><strong>Program status.</strong> Any closure, suspension, or "going direct" language — and whether the
+      page still loads at all.</li>
+  </ul>
+
+  <h2>Why a scheduled diff beats re-reading</h2>
+  <p>Terms pages are long, dense, and edited surgically. The change that costs you money is usually one number
+    or one clause inside thousands of words. Re-reading the whole page on a human schedule fails for obvious
+    reasons — you won't, and if you do, you'll miss the one edited line.</p>
+  <p>A scheduled diff inverts the problem. It stores a clean snapshot of the page, and on each run compares the
+    new version to the old one:</p>
+  <ul>
+    <li><strong>It normalises cosmetic noise first.</strong> Cookie banners, CSRF tokens, ad slots and
+      whitespace are stripped before comparison, so you aren't alerted on chrome that changes every load.</li>
+    <li><strong>It shows the exact added/removed lines.</strong> You see "40%" become "25%", not "the page
+      changed".</li>
+    <li><strong>It classifies the change.</strong> Commission cut, payment change, GEO restriction, closure —
+      each with a severity, so the urgent ones stand out.</li>
+  </ul>
+  <div class="callout">
+    <p><strong>A note on JavaScript-rendered pages.</strong> Some affiliate sites serve a near-empty HTML shell
+      and render the terms with JavaScript. A simple fetch can't read those, and honest monitoring should say
+      so rather than claim coverage it doesn't have. On our <a href="/feed/">live feed</a> we flag exactly which
+      monitored pages are JS shells — for those, monitoring a server-rendered page or a portal export is the
+      right move.</p>
+  </div>
+
+  <h2>How to set it up</h2>
+  <ol>
+    <li>Collect the public terms / commission URL for each program you run.</li>
+    <li>Take a baseline snapshot of each.</li>
+    <li>Re-snapshot on a schedule (daily for revenue-heavy programs), diffing against the baseline.</li>
+    <li>Route adverse changes to wherever you'll actually see them — email, Slack, or Telegram via RSS.</li>
+  </ol>
+  <p>The open-source <a href="https://github.com/wartzar-bee/affiliate-watch">affiliate-watch engine</a> does all
+    of this — snapshot, normalise, diff, classify, and emit a report / JSON / RSS feed — with transparent rules
+    you can inspect and a test suite that proves the classification.</p>
+
+  <div class="cta-card">
+    <h2>Monitor your programs' terms automatically</h2>
+    <p>Get an alert the moment a RevShare cut, a new fee, a GEO restriction, or a closure appears on a program
+      you depend on — with the exact before/after lines.</p>
+    <a class="btn primary" href="/#waitlist">Get change alerts &rarr;</a>
+    <p style="margin-top:8px"><span class="small">Email only, used solely for alerts. No tracking.</span></p>
+  </div>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <ul>
+      <li><a href="/casino-affiliate-program-changes-tracker/">Casino affiliate program changes &amp; closures tracker</a></li>
+      <li><a href="/affiliate-program-still-paying/">Is an affiliate program still paying? How to check</a></li>
+      <li><a href="/negative-carryover-casino-affiliate/">Negative carryover in casino affiliate deals — how to catch it</a></li>
+      <li><a href="/gpwa-affiliate-program-warnings-automated/">Automating GPWA-style program warnings</a></li>
+    </ul>
+  </div>
+</article></div></main>
+
+<footer class="site"><div class="wrap">
+  affiliate-watch — automated change &amp; closure alerts for casino / sportsbook affiliate programs.
+  Monitors public pages only, politely and per robots.txt. Not affiliated with any operator, network, or GPWA.
+  &middot; <a href="/feed/">Live feed</a> &middot; <a href="https://github.com/wartzar-bee/affiliate-watch">Source</a>
+</div></footer>
+</body>
+</html>

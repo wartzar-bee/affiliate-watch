@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>affiliate-watch — Casino Affiliate Program Change & Closure Alerts</title>
+<meta name="description" content="Know the moment a casino affiliate program changes its terms, cuts your commission, adds negative carryover, stops paying, or closes — before it costs you. Automated, continuous monitoring of public affiliate-program pages.">
+<link rel="canonical" href="__SITE__/">
+<meta property="og:title" content="affiliate-watch — Casino Affiliate Program Change & Closure Alerts">
+<meta property="og:description" content="Automated, continuous alerts when a casino affiliate program changes its terms, cuts commission, adds negative carryover, or closes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="__SITE__/">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='13' font-size='13'%3E%F0%9F%91%81%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="/">affiliate<b>-watch</b> <span class="eye">&#128065;</span></a>
+  <nav class="top">
+    <a href="/feed/">Live feed</a>
+    <a href="#how">How it works</a>
+    <a href="#guides">Guides</a>
+    <a href="#waitlist">Get alerts</a>
+  </nav>
+</div></header>
+
+<header class="hero"><div class="wrap">
+  <p class="eyebrow">For casino &amp; sportsbook affiliates</p>
+  <h1>Know the moment a casino affiliate program <span class="hl">changes the deal</span> — before it costs you.</h1>
+  <p class="lede">Your income lives or dies on terms you don't control. A program can quietly cut your
+    commission, slip in <strong>negative carryover</strong>, raise the payout threshold, drop your payment
+    method, block a GEO you rank for, lose its licence, or just close and stop paying. Today you find out
+    <strong>late</strong> — on payday, or when someone happens to post about it on a forum. affiliate-watch
+    watches the programs you depend on and tells you the moment a documented change appears.</p>
+  <div class="cta-row">
+    <a class="btn primary" href="#waitlist">Get change alerts &rarr;</a>
+    <a class="btn" href="/feed/">See the live feed</a>
+  </div>
+  <p class="small">No spend, no account to use the feed. We monitor only public pages, politely and per robots.txt.</p>
+</div></header>
+
+<section id="problem"><div class="wrap">
+  <h2>The changes that quietly drain affiliate income</h2>
+  <p class="muted">Every one of these is a documented change to a program's own terms — visible on a public
+    page the day it ships, but easy to miss until your next payment is short.</p>
+  <div class="grid three" style="margin-top:18px">
+    <div class="card"><h3 style="color:var(--high)">Commission cut</h3>
+      <p>RevShare 45% &rarr; 25%, a worse CPA, a new tier you'll never hit, or a shortened cookie window.</p></div>
+    <div class="card"><h3 style="color:var(--bad)">Negative carryover</h3>
+      <p>A clause appears that carries a negative balance into next month — or the "no negative carryover" reassurance you signed up for is quietly removed.</p></div>
+    <div class="card"><h3 style="color:var(--high)">Payment terms</h3>
+      <p>Higher minimum payout, a dropped method (Skrill/Neteller/PayPal), a new "admin fee", or a slower schedule.</p></div>
+    <div class="card"><h3 style="color:var(--high)">GEO restriction</h3>
+      <p>A market you rank for is added to the restricted list — your best-converting traffic stops qualifying.</p></div>
+    <div class="card"><h3 style="color:var(--bad)">Licence lost</h3>
+      <p>The operator's licence is revoked or suspended in a market, putting your payments and players at risk.</p></div>
+    <div class="card"><h3 style="color:var(--bad)">Program closes</h3>
+      <p>"No longer accepting", "going direct", the page 404s — and you're still sending traffic to a dead deal.</p></div>
+  </div>
+  <p class="small" style="margin-top:18px">Catching <strong>one</strong> silently-degraded or dead program in
+    time can be worth more than a year of watching for it. That's the entire pitch — no inflated numbers, no hype.</p>
+</div></section>
+
+<section id="how"><div class="wrap">
+  <h2>How it works</h2>
+  <ol class="steps" style="max-width:64ch">
+    <li>You give us the affiliate programs you depend on (their public terms / commission / status pages).</li>
+    <li>On a schedule, we take a snapshot of each page and <strong>diff it against the last one</strong> — cosmetic churn (cookie banners, tokens, ad slots) is normalised away first, so we don't false-alarm.</li>
+    <li>When real content changes, we <strong>classify it</strong> with transparent rules: closure, negative carryover, commission cut, payment/GEO/licence change, or a generic terms edit — each with a severity and the exact before/after lines that triggered it.</li>
+    <li>You get a <strong>specific alert for your programs</strong> — by email, or via an RSS feed you can pipe to Slack/Telegram/a dashboard.</li>
+  </ol>
+  <p class="small" style="margin-top:14px">Every alert shows <em>why</em> it fired — the matched phrase and the
+    added/removed lines — so you can judge it in seconds. We never invent a change. The engine that does
+    this is real and tested; you can <a href="https://github.com/wartzar-bee/affiliate-watch">read the source</a>.</p>
+</div></section>
+
+<section id="honest"><div class="wrap">
+  <h2>Honest positioning: automated &amp; continuous vs. the manual GPWA forum</h2>
+  <p>The closest thing that exists today is the <strong>GPWA "Affiliate Program Warnings" forum</strong>, where
+    affiliates manually post when a program stops paying or worsens terms. It's genuinely valuable — and it
+    catches things a page diff can't (a program that pays late without changing any page). affiliate-watch is
+    the <strong>complementary automated half</strong>: it diffs the programs' own public pages and alerts
+    <em>you</em> about <em>your</em> programs, the moment a documented change is published.</p>
+  <div class="tbl-scroll"><table class="cmp">
+    <thead><tr><th></th><th>GPWA "Program Warnings" forum</th><th>affiliate-watch</th></tr></thead>
+    <tbody>
+      <tr><td>How a change is found</td><td>a human notices &amp; posts</td><td>automated snapshot + diff of the program's own pages</td></tr>
+      <tr><td>Coverage</td><td>whatever people happen to report</td><td>exactly your watchlist</td></tr>
+      <tr><td>Latency</td><td>whenever someone posts</td><td>every scheduled run</td></tr>
+      <tr><td>Output</td><td>a forum thread to go read</td><td>a per-program alert &rarr; email / RSS / your channel</td></tr>
+      <tr><td>Catches</td><td>mostly non-payment scandals</td><td>terms edits, RevShare/CPA cuts, negative carryover, payment / GEO / licence / closure</td></tr>
+    </tbody>
+  </table></div>
+  <p class="small">It cannot see changes that aren't reflected on a public page — affiliate-portal-only terms or
+    a silent late payment. It's a published-change radar, not a payment auditor. We'd rather be clear about
+    that than oversell it.</p>
+</div></section>
+
+<section id="waitlist"><div class="wrap">
+  <h2>Get alerts for the programs you depend on</h2>
+  <p class="muted">Join the waitlist. Tell us which programs you care about and we'll prioritise coverage and
+    let you know when per-affiliate alerts are ready.</p>
+  <div class="signup" style="margin-top:16px">
+    <form id="waitlist-form" novalidate>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@youraffiliatesite.com">
+      </div>
+      <div>
+        <label for="programs">Programs you want watched <span class="muted">(optional)</span></label>
+        <input type="text" id="programs" name="programs_of_interest" placeholder="e.g. LeoVegas Affiliates, Betsson, Casumo…">
+      </div>
+      <div class="cta-row" style="margin:2px 0 0">
+        <button class="btn primary" type="submit" id="submit-btn">Join the waitlist</button>
+      </div>
+      <p class="formmsg" id="form-msg" role="status" aria-live="polite"></p>
+      <p class="formnote">Email only, used solely to send you affiliate-program change alerts and a launch note.
+        No tracking, no sharing, no marketing list. Unsubscribe any time.</p>
+    </form>
+  </div>
+</div></section>
+
+<section id="guides"><div class="wrap">
+  <h2>Guides for affiliates</h2>
+  <p class="muted">Practical, honest reads on the program changes that cost affiliates money — and how to catch them early.</p>
+  <div class="guides-list">
+    <a class="guide-card" href="/casino-affiliate-program-changes-tracker/"><b>Casino affiliate program changes &amp; closures tracker</b><span>How to track terms changes and closures across the programs you run.</span></a>
+    <a class="guide-card" href="/affiliate-program-still-paying/"><b>Is an affiliate program still paying? How to check</b><span>The signals that a program is degrading or going dark — and how to verify.</span></a>
+    <a class="guide-card" href="/affiliate-terms-commission-monitoring/"><b>Affiliate terms &amp; commission monitoring</b><span>What to watch on a program's terms page, and why a diff beats re-reading it.</span></a>
+    <a class="guide-card" href="/negative-carryover-casino-affiliate/"><b>Negative carryover in casino affiliate deals</b><span>What it is, why it's costly, and how to catch it being added.</span></a>
+    <a class="guide-card" href="/gpwa-affiliate-program-warnings-automated/"><b>Automating GPWA-style program warnings</b><span>Pairing the community forum with automated change detection.</span></a>
+  </div>
+</div></section>
+
+<footer class="site"><div class="wrap">
+  affiliate-watch — automated change &amp; closure alerts for casino / sportsbook affiliate programs.
+  Monitors public pages only, politely and per robots.txt. Not affiliated with any operator, network, or GPWA.
+  &middot; <a href="/feed/">Live feed</a> &middot; <a href="/feed/alerts.rss">RSS</a> &middot;
+  <a href="https://github.com/wartzar-bee/affiliate-watch">Source</a>
+</div></footer>
+
+<script src="/assets/waitlist.js"></script>
+</body>
+</html>

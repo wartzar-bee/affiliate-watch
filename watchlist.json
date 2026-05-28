@@ -1,0 +1,16 @@
+{
+  "userAgent": "affiliate-watch/0.1 (+set-your-contact@example.com)",
+  "minDelayMs": 2000,
+  "watch": [
+    { "name": "LeoVegas Affiliates — Terms", "url": "https://www.leovegasaffiliates.com/terms-and-conditions" },
+    { "name": "Betsson Group Affiliates — Terms", "url": "https://www.betssongroupaffiliates.com/terms-and-conditions/" },
+    { "name": "Casumo Affiliates — Terms", "url": "https://www.casumoaffiliates.com/terms.html" },
+    { "name": "Buffalo Partners — Terms", "url": "https://buffalopartners.com/en/TermsAndConditions/Index" },
+    { "name": "Mr Affiliate (Mr Green) — Terms", "url": "https://www.mraffiliate.com/terms-and-conditions" },
+    { "name": "Rewards Affiliates — Terms", "url": "https://www.rewardsaffiliates.com/en/terms-and-conditions/" },
+    { "name": "Betway Partners (Africa) — Terms", "url": "https://www.betwaypartnersafrica.com/terms-and-conditions" },
+    { "name": "Gamesys Group Partners — Terms (UK)", "url": "https://gamesysgrouppartners.com/gamesys-affiliates-terms-and-conditions/" },
+    { "name": "Galaxy Affiliates — Terms", "url": "https://www.galaxyaffiliates.com/terms-and-conditions/" },
+    { "name": "Games & Casino Affiliate — Terms", "url": "https://gamesandcasino.com/affiliate/terms-conditions.htm" }
+  ]
+}

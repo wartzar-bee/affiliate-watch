@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>__SITE__/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>__SITE__/feed/</loc><changefreq>daily</changefreq><priority>0.9</priority></url>
+  <url><loc>__SITE__/casino-affiliate-program-changes-tracker/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>__SITE__/affiliate-program-still-paying/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>__SITE__/affiliate-terms-commission-monitoring/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>__SITE__/negative-carryover-casino-affiliate/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>__SITE__/gpwa-affiliate-program-warnings-automated/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+</urlset>

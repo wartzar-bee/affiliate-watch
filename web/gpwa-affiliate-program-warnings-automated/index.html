@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Automating GPWA-Style Affiliate Program Warnings</title>
+<meta name="description" content="The GPWA Affiliate Program Warnings forum is valuable but manual and reactive. Here's how to pair that community signal with automated change detection so you catch documented program changes the day they ship — for your specific programs.">
+<link rel="canonical" href="__SITE__/gpwa-affiliate-program-warnings-automated/">
+<meta property="og:title" content="Automating GPWA-Style Affiliate Program Warnings">
+<meta property="og:description" content="Pair the GPWA Program Warnings forum with automated change detection to catch documented changes the day they ship.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="__SITE__/gpwa-affiliate-program-warnings-automated/">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext y='13' font-size='13'%3E%F0%9F%91%81%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="site"><div class="wrap">
+  <a class="logo" href="/">affiliate<b>-watch</b> <span class="eye">&#128065;</span></a>
+  <nav class="top"><a href="/feed/">Live feed</a> <a href="/#guides">Guides</a> <a href="/#waitlist">Get alerts</a></nav>
+</div></header>
+
+<main><div class="wrap"><article class="guide">
+  <div class="crumbs"><a href="/">Home</a> &rsaquo; <a href="/#guides">Guides</a> &rsaquo; Automating program warnings</div>
+  <h1>Automating GPWA-style affiliate program warnings</h1>
+  <p class="lede">The GPWA "Affiliate Program Warnings" forum is the best-known place affiliates flag programs
+    that stop paying or worsen terms. It's genuinely valuable — and it's also manual, reactive, and not
+    specific to <em>your</em> programs. This guide explains where it shines, where it lags, and how to pair it
+    with automated change detection so nothing slips past you.</p>
+
+  <h2>What the GPWA forum does well</h2>
+  <p>GamblingPortalWebmasters Association runs a long-standing community where affiliates publicly report bad
+    behaviour by programs: non-payment, locked accounts, retroactive term changes, scams. Its strengths are
+    real and worth respecting:</p>
+  <ul>
+    <li><strong>It catches things a page can't show.</strong> A program that quietly pays late, locks an
+      account, or behaves badly in private leaves no trace on its public terms page — but a burned affiliate
+      will post about it.</li>
+    <li><strong>Human context.</strong> Threads carry nuance, evidence, and replies from others with the same
+      experience.</li>
+    <li><strong>Reputation memory.</strong> A searchable record of which programs have a history of problems.</li>
+  </ul>
+
+  <h2>Where it lags</h2>
+  <ul>
+    <li><strong>It's manual.</strong> Someone has to notice the problem and take the time to post it.</li>
+    <li><strong>It's reactive.</strong> A report appears after the damage, often after a missed payment.</li>
+    <li><strong>It's not per-affiliate.</strong> Coverage is whatever the community happens to report, not the
+      specific set of programs you run.</li>
+    <li><strong>You have to be reading at the right time.</strong> A thread only helps if you see it before you
+      send more traffic.</li>
+  </ul>
+
+  <h2>The complementary half: automated change detection</h2>
+  <p>A large class of adverse changes <em>are</em> documented on a program's own public pages — a cut RevShare,
+    a new negative-carryover clause, a payment-method change, a GEO restriction, a "going direct" notice, or a
+    terms page that starts 404-ing. These don't need a human to notice; a machine can snapshot the page on a
+    schedule, diff it, and alert you the day it changes — for exactly the programs you choose.</p>
+  <div class="callout">
+    <p><strong>Two halves of one signal.</strong> Use the GPWA forum for the human-only problems (silent late
+      payment, account lockouts, off-page behaviour). Use automated detection for the documented, on-page
+      changes — caught immediately, scoped to your watchlist. Together they cover far more than either alone.</p>
+  </div>
+  <p>You can see the automated half in action on the <a href="/feed/">live feed</a>: ten real public
+    casino-affiliate programs, each with its last-checked time and status. The <a href="https://github.com/wartzar-bee/affiliate-watch">open-source engine</a>
+    behind it diffs each page and classifies changes with transparent rules — and emits an RSS feed you can pipe
+    straight into a reader, Slack, or Telegram, the same way you might follow a forum.</p>
+
+  <h2>A practical setup</h2>
+  <ol>
+    <li>Keep watching / searching the GPWA forum for the programs you run — it's your early-warning network for
+      off-page problems.</li>
+    <li>Add automated change detection for the same programs' public terms pages, so on-page changes are caught
+      instantly and specifically.</li>
+    <li>Route both into one place you check daily — an RSS reader works well for the automated alerts.</li>
+  </ol>
+  <p class="small">affiliate-watch is not affiliated with or endorsed by GPWA; it's an independent, complementary
+    tool. The community forum remains the right place for human reports — we just automate the on-page half.</p>
+
+  <div class="cta-card">
+    <h2>Add the automated half</h2>
+    <p>Get instant alerts on documented changes — commission cuts, negative carryover, payment / GEO / licence
+      changes, and closures — for the specific programs you run.</p>
+    <a class="btn primary" href="/#waitlist">Get change alerts &rarr;</a>
+    <p style="margin-top:8px"><span class="small">Email only, used solely for alerts. No tracking.</span></p>
+  </div>
+
+  <div class="related">
+    <h2>Keep reading</h2>
+    <ul>
+      <li><a href="/casino-affiliate-program-changes-tracker/">Casino affiliate program changes &amp; closures tracker</a></li>
+      <li><a href="/affiliate-program-still-paying/">Is an affiliate program still paying? How to check</a></li>
+      <li><a href="/affiliate-terms-commission-monitoring/">Affiliate terms &amp; commission monitoring</a></li>
+      <li><a href="/negative-carryover-casino-affiliate/">Negative carryover in casino affiliate deals — how to catch it</a></li>
+    </ul>
+  </div>
+</article></div></main>
+
+<footer class="site"><div class="wrap">
+  affiliate-watch — automated change &amp; closure alerts for casino / sportsbook affiliate programs.
+  Monitors public pages only, politely and per robots.txt. Not affiliated with any operator, network, or GPWA.
+  &middot; <a href="/feed/">Live feed</a> &middot; <a href="https://github.com/wartzar-bee/affiliate-watch">Source</a>
+</div></footer>
+</body>
+</html>

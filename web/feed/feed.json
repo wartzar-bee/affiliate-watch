@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-05-28T23:49:02.746Z",
+  "checked": 10,
+  "newBaselines": 10,
+  "unchanged": 0,
+  "alertCount": 0,
+  "programs": [
+    {
+      "name": "LeoVegas Affiliates — Terms",
+      "url": "https://www.leovegasaffiliates.com/terms-and-conditions",
+      "status": 200,
+      "state": "warn",
+      "note": "Reachable but served as a JS-rendered shell (little server-side text).",
+      "checkedAt": "2026-05-28T23:48:37.880Z"
+    },
+    {
+      "name": "Betsson Group Affiliates — Terms",
+      "url": "https://www.betssongroupaffiliates.com/terms-and-conditions/",
+      "status": 200,
+      "state": "ok",
+      "note": "Page reachable; baseline captured.",
+      "checkedAt": "2026-05-28T23:48:42.137Z"
+    },
+    {
+      "name": "Casumo Affiliates — Terms",
+      "url": "https://www.casumoaffiliates.com/terms.html",
+      "status": 200,
+      "state": "ok",
+      "note": "Page reachable; baseline captured.",
+      "checkedAt": "2026-05-28T23:48:44.339Z"
+    },
+    {
+      "name": "Buffalo Partners — Terms",
+      "url": "https://buffalopartners.com/en/TermsAndConditions/Index",
+      "status": 200,
+      "state": "ok",
+      "note": "Page reachable; baseline captured.",
+      "checkedAt": "2026-05-28T23:48:46.761Z"
+    },
+    {
+      "name": "Mr Affiliate (Mr Green) — Terms",
+      "url": "https://www.mraffiliate.com/terms-and-conditions",
+      "status": 200,
+      "state": "ok",
+      "note": "Page reachable; baseline captured.",
+      "checkedAt": "2026-05-28T23:48:49.161Z"
+    },
+    {
+      "name": "Rewards Affiliates — Terms",
+      "url": "https://www.rewardsaffiliates.com/en/terms-and-conditions/",
+      "status": 200,
+      "state": "ok",
+      "note": "Page reachable; baseline captured.",
+      "checkedAt": "2026-05-28T23:48:52.922Z"
+    },
+    {
+      "name": "Betway Partners (Africa) — Terms",
+      "url": "https://www.betwaypartnersafrica.com/terms-and-conditions",
+      "status": 200,
+      "state": "warn",
+      "note": "Reachable but served as a JS-rendered shell (little server-side text).",
+      "checkedAt": "2026-05-28T23:48:55.118Z"
+    },
+    {
+      "name": "Gamesys Group Partners — Terms (UK)",
+      "url": "https://gamesysgrouppartners.com/gamesys-affiliates-terms-and-conditions/",
+      "status": 200,
+      "state": "ok",
+      "note": "Page reachable; baseline captured.",
+      "checkedAt": "2026-05-28T23:48:57.282Z"
+    },
+    {
+      "name": "Galaxy Affiliates — Terms",
+      "url": "https://www.galaxyaffiliates.com/terms-and-conditions/",
+      "status": 200,
+      "state": "ok",
+      "note": "Page reachable; baseline captured.",
+      "checkedAt": "2026-05-28T23:48:59.620Z"
+    },
+    {
+      "name": "Games & Casino Affiliate — Terms",
+      "url": "https://gamesandcasino.com/affiliate/terms-conditions.htm",
+      "status": 200,
+      "state": "ok",
+      "note": "Page reachable; baseline captured.",
+      "checkedAt": "2026-05-28T23:49:02.744Z"
+    }
+  ]
+}
